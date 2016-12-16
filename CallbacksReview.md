@@ -24,7 +24,7 @@ points.every(function(point){
 ###### checks if any of the elements meet the criteria given as a function
 ```js
 var points = [40, 100, 1, 5, 25, 10];
-points.every(function(point){
+points.some(function(point){
   return point > 15;
 }); //true
 ```
@@ -42,8 +42,8 @@ console.log("was it found?: ", isFound );
  3) change the function so that it looks for the orange instead
  4) write code that does the same thing as the above but without indexOf
 
- ### filter()
- ###### Creates a new array with all elements that pass the test in the function that you pass as a parameter to filter().
+### filter()
+###### Creates a new array with all elements that pass the test in the function that you pass as a parameter to filter().
 ```js
 var arr = ["apple", "apple", "orange", "banana", "pear", "apple","orange"];
 var newArr = [];
