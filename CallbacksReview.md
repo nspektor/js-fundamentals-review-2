@@ -48,9 +48,15 @@ console.log("was it found?: ", isFound );
 var arr = ["apple", "apple", "orange", "banana", "pear", "apple","orange"];
 var newArr = [];
 var newArr = arr.filter(function(item){
-    return item === "apple";
+    if(item.indexOf("a") != -1){
+      return true;
+    }
 });
-console.log("Filter results:", newArr);
+var newNewArr = newArr.map(function(iten){
+  var upItem = item.toUpperCase();
+  return upItem;
+})
+console.log("Filter results:", newNewArr);
 
 ```
 1) write in english what is happening above

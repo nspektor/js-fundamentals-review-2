@@ -60,7 +60,7 @@ logAll(arr); //logs apple, orange, pear
 
 
 //Write a function names `UpperIt` that returns a new array with the same elements as the given array except all in upper case, using filter()
-
+var arr = ["apple","orange","pear"];
 UpperIt(arr); //returns ["APPLE", "ORANGE", "PEAR"]
 
 // Write a function called `sumArr` that gets the sum of all of the values of the array, using reduce()

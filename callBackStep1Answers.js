@@ -9,17 +9,32 @@ for(var i= 0; i< arr.length; i++){
 	}
 }
 
-
-// filter()
-
-var arr = ["apple", "apple", "orange", "banana", "pear", "apple", "orange"];
-var newArr = [];
-
-for(var i= 0; i< arr.length; i++){
-    if(arr[i].name === "apple" ){ //"orange"
-		newArr.push(arr[i]);
+function isItThere(arr, string){
+	for(var i = 0; i < arr.length; i++){
+		if(arr[i] === string){
+			return "found"
+		}
+		return "nope"
 	}
 }
+
+console.log(isItThere(arr, 'strawberry'));
+
+// filter()
+var oldArr = ["apple", "apple", "orange", "banana", "pear", "apple", "orange"];
+var newArr = [];
+
+function myFilter(arr, string){
+	for(var i= 0; i< arr.length; i++){
+      if(arr[i] === string ){ //"orange"
+          newArr.push(arr[i]);
+      }
+    }
+	return newArr;
+}
+
+
+console.log(myFilter(oldArr, "strawberry"));
 
 console.log("Filter results:",newArr);
 
