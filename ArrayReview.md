@@ -52,10 +52,4 @@ var famString = family.join();
 //famString will be: "mom,dad,sister"
 ```
 
-- indexOf: searches the array for the item given and returns its position (index)
-```js
-var bobPosition = friends.indexOf("bob");
-//bobPosition will be: 1
-```
-
 [Practice](https://github.com/C4Q/AC3.1/blob/master/lessons/javascript-fundamentals/objects-and-arrays/array-methods-exercises.md)
