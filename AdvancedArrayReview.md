@@ -170,7 +170,7 @@ function combineIntoStringWithReduce(arr){
   return stringOfArrayContents;
 }
 var stringOfFruits = combineIntoStringWithReduce(fruits);
-console.log("capitalized array: (with reduce)", stringOfFruits);
+console.log("string Of Fruits: (with reduce)", stringOfFruits);
 ```
 Here's the function that does the same thing, but without reduce:
 ```js
@@ -184,7 +184,7 @@ function combineIntoStringWithoutReduce(arr){
   return stringOfArrayContents;
 }
 var stringOfFruits = combineIntoStringWithoutReduce(fruits);
-console.log("capitalized array: (without reduce)", stringOfFruits);
+console.log("string Of Fruits: (without reduce)", stringOfFruits);
 ```
 
 
