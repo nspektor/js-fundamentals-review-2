@@ -1,46 +1,51 @@
-var fruits = ["apple", "apple", "orange", "banana", "pear", "apple", "orange"];
+
 
 //-------------------------------- indexOf ----------------------
-
-//does what indexOf does:
+var fruits = ["apple", "orange", "banana"];
 
 function isItThere(arr, string){
+	var isFound = arr.indexOf(string) != -1;
+	return isFound;
+}
+console.log("was it found? (with indexOf): ", isItThere(fruits, "apple"));
+
+//does the same thing but withbut without using indexOf:
+//(see how much more code is needed)
+
+function isItThereWithoutIndexOf(arr, string){
 	for(var i = 0; i < arr.length; i++){
 		if(arr[i] === string){
-			return true
+			return true;
 		}
-		return false
+		return false;
 	}
 }
-console.log("was it found?: ", isItThere(fruits, "apple"));
-
-//doing the same thing but with indexOf:
-
-var isFound = fruits.indexOf("apple") != -1;
-console.log("was it found?: ", isFound);
+console.log("was it found? (without indexOf): ", isItThereWithoutIndexOf(fruits, "apple"));
 
 //-------------------------------- Filter --------------------
+var fruits = ["apple", "apple", "orange", "banana", "pear", "apple", "orange"];
 
-//does what filter does:
+function getApples(arr){
+	var newArr = [];
+	var newArr = arr.filter(function(item){
+	    return item === "apple";
+	});
+	return newArr;
+}
+console.log("apples (with filter):", getApples(fruits));
 
-function myFilter(arr, string){
+//does the same thing but withbut without using filter:
+
+function getApplesWithoutFilter(arr){
+	var newArr = [];
 	for(var i= 0; i< arr.length; i++){
-      if(arr[i] === string ){ //"orange"
-          newArr.push(arr[i]);
+      if(arr[i] === "apple" ){
+          newArr.push(arr[i]); //String method!
       }
     }
 	return newArr;
 }
-console.log(myFilter(fruits, "apple"));
-
-
-//doing the same thing, but with filter:
-var newArr = [];
-var newArr = fruits.filter(function(item){
-    return item === "apple";
-});
-console.log("Filter results:", newArr);
-
+console.log("apples (with filter):", getApplesWithoutFilter(fruits));
 
 //------------------------------ ForEach ------------------
 

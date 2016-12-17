@@ -1,7 +1,8 @@
 // indexOf()
 
-var arr = ['apple','orange','pear'],
-	found = false;
+var arr = ['apple','orange','pear']
+
+found = false;
 
 for(var i= 0; i< arr.length; i++){
 	if(arr[i] === 'apple'){ //'orange'

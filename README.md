@@ -26,6 +26,9 @@ Methods covered:
 
 ## [AdvancedArrayReview.md](https://github.com/nspektor/js-fundamentals-review-2/blob/master/AdvancedArrayReview.md)
 ##### Has an overview of ADVANCED ARRAY methods that you should look over, understand, and practice.
+There is an example for each of the methods, and for indexOf, filter, forEach, map, and reduce there is
+also an example for how to do the same thing without the advanced method. This is so that you can
+understand what the method does behind the scenes.
 
 Methods covered:
  * sort
@@ -37,10 +40,6 @@ Methods covered:
  * forEach
  * map
  * reduce
-
-## [advancedArrayExamples.js](https://github.com/nspektor/js-fundamentals-review-2/blob/master/advancedArrayExamples.js)
-##### Has the examples that we talked about on Friday which come from AdvancedArrayReview.md
-Has an example using each advanced array method and then code that does the same thing without using the advanced array method
 
 ## [advancedArrayPractice.js](https://github.com/nspektor/js-fundamentals-review-2/blob/master/advancedArrayPractice.js)
 ##### Has practice problems that you should do so you can really understand the methods covered in AdvancedArrayReview.md
