@@ -117,7 +117,7 @@ Here's a function that does the same thing but without forEach
 var fruits = ["apple", "apple", "orange", "banana", "pear", "apple","orange"];
 
 function capitalizeWithoutForEach(arr){
-  for(var i= 0, i < arr.length; i++){
+  for(var i= 1; i < arr.length; i++){
     arr[i] = arr[i].toUpperCase();
   }
 }
